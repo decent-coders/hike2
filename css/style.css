@@ -341,8 +341,10 @@
   background-image: url(../images/banner7.webp);
   height: 948px;
   width: 1440px;
-  z-index: 6;
   margin-top: -55px;
+  /* sometimes z index kaj korte chay na tkhn amgo emn  postition use korte hoy eta inspect krle e suggest kore tkhn */
+  position: sticky;
+  z-index: 6;
 }
 .banner7 .row {
   margin: 0;
@@ -358,7 +360,8 @@
   text-transform: uppercase;
 }
 .banner7-text p {
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  /* ei margin tar kono drkr silo na */
   font-size: 29px;
   font-family: "Montserrat", system-ui;
   font-weight: 400;
@@ -419,8 +422,23 @@
   background-image: url(../images/banner8.webp);
   height: 700px;
   width: 1440px;
+  z-index: 1;
   z-index: 5;
+  /* sometimes z index kaj korte chay na tkhn amgo emn  postition use korte hoy eta inspect krle e suggest kore tkhn */
+  position: relative;
+  z-index: 1;
   margin-top: -99px;
 }
+
+/* Bootstrap er default border radious 0 deya silo oida 90 koira disi */
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -168px;
+  border-top-left-radius: 90px !important ;
+  border-bottom-left-radius: 90px !important ;
+}
+
 /* font-family: "Montserrat", system-ui;
 */
